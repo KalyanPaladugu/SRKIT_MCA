@@ -4,16 +4,40 @@
     text-align: center;
     border-radius: 4px;
 }
-.left {
-    width: 25%;
-}
+
 .right {
     border: 1px solid lightgray; 
-    width: 75%;
+    width: 73%;
     margin-left: 1%;
     
 }
 
 .parent {
     display: flex;
+    flex-wrap: wrap;
+}
+
+/* Mobile */
+@media screen  and (max-width:600px) {
+   
+    .card {
+        background-color:rgb(0, 255, 255);
+        width: 100%;
+    }
+    .right,.left {
+        width: 100%;
+    }
+    .right {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+@media screen and (min-width:601px) and (max-width:1278px) {
+    .right,.left {
+        width:49%;
+    }
+    .right {
+        background-color: lightseagreen;
+        margin-left: 0px;
+    }
 }
